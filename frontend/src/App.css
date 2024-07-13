@@ -1,0 +1,142 @@
+/* App.css */
+
+body {
+    margin: 0;
+    height: 100%;
+    background: radial-gradient(circle at var(--x, 50%) var(--y, 50%), #5161ce, #333);
+    transition: background 0.3s ease;
+  }
+  
+  html {
+    height: 100%;
+  }
+  
+  .App {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    background: radial-gradient(circle at var(--x, 50%) var(--y, 50%), #5161ce, #333);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s ease;
+  }
+  
+  .btn-clear {
+    background-color: #dc3545; /* Bootstrap danger color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-left: 10px; /* Adjust as needed */
+  }
+  
+  .btn-clear:hover {
+    background-color: #c82333; /* Darker shade for hover effect */
+  }
+  
+  .title-container {
+    margin-bottom: 20px;
+  }
+  
+  .page-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .chat-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    overflow-y: auto;
+    max-height: 400px;
+  }
+  
+  .chat-item {
+    max-width: 70%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    word-wrap: break-word;
+  }
+  
+  .user {
+    align-self: flex-end;
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .bot {
+    align-self: flex-start;
+    background-color: #f0f0f0;
+    color: #333;
+    border: 1px solid #ccc;
+  }
+  
+  
+  .chat-text {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+  
+  .form-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .input-message {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+  }
+  
+  .btn-send {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 0 4px 4px 0;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-send:hover {
+    background-color: #0056b3;
+  }
+  
+  .loader {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-left: 4px solid #007bff;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    animation: spin 1s linear infinite;
+    margin: auto;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
